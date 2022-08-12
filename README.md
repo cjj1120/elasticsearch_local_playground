@@ -1,5 +1,7 @@
-# Cloned from 
-https://github.com/deviantony/docker-elk 
+# Note & Quick setup: 
+This repo is cloned from `https://github.com/deviantony/docker-elk`
+
+Some mods on `docker_compose.yaml` file for quick setup, refer to this [medium_article](https://fatmali.medium.com/https-medium-com-fatmali-how-to-setup-a-docker-elk-elastic-logstash-kibana-stack-in-a-jiffy-ab56e2660416)
 
 # Elastic stack (ELK) on Docker
 
@@ -34,6 +36,7 @@ Other available stack variants:
 ---
 
 ## Philosophy
+
 
 We aim at providing the simplest possible entry into the Elastic stack for anybody who feels like experimenting with
 this powerful combo of technologies. This project's default configuration is purposely minimal and unopinionated. It
