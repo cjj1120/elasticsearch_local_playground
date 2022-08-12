@@ -1,0 +1,55 @@
+GET /_cat/indices
+
+PUT /my-index-000001-test101
+
+PUT /my-index-000001-test101/_mapping
+{    
+"properties": {                
+  "ID": {                    
+    "type": "short"                
+  },                
+    "keyword-exact-match-only": {                    
+      "type": "keyword"                
+   },               
+      "timestamp": {                    
+        "type": "date"                
+   },                
+        "data": {                    
+          "type": "text"               
+     }      
+    }        
+ 
+}
+
+GET /my-index-000001-test101/_mapping
+
+
+POST /my-index-000001-test101/_doc
+{
+  "ID": "01",
+  "data": "Hello World 101",
+  "keyword-exact-match-only": "for-testing",
+  "timestamp":"2022-07-31"
+}
+
+
+GET /my-index-000001-test101/_search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
